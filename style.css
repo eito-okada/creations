@@ -8,28 +8,34 @@ body {
 }
 
 body {
-    background: url('https://media.istockphoto.com/photos/christmas-background-with-gift-boxes-festive-decor-fir-tree-branches-picture-id1273169643?k=20&m=1273169643&s=170667a&w=0&h=aQTcF7pKy_cQ8irfeGNwPJyVAZA8KBRHBd1vF2xBHco=');
+    background: url('https://www.baylorcountylibrary.org/merry-christmas-red-ball.jpg/@@images/image.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-clip: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 .content {
-    width: 60%;
+    position: fixed;
+    top: 5vh;
+    right: 0;
+    width: 50%;
     height: 60%;
     overflow: scroll;
     background-color: transparent;
+    backdrop-filter: blur(3px);
+    padding: 0px;
+    margin: 0px;
+}
+
+.title {
+    height: 60vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(3px);
-    padding: 0px;
-    margin: 0px;
 }
 
 a {
@@ -38,14 +44,36 @@ a {
 
 p {
     text-align: center;
-}
-
-ul {
-    width: 60%;
+    width: 100%;
 }
 
 img {
     width: 20vw;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    width: 100%;
+}
+
+.wishlist {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ol {
+    width: 60%;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    width: 100%;
+    padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
